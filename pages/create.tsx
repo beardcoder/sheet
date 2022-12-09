@@ -3,8 +3,10 @@ import { Layout } from '../components/Layout'
 import { useForm } from 'react-hook-form'
 import { Character } from '@prisma/client'
 import { Card } from '../components/Card'
+import { useRouter } from 'next/router'
 
 export default function Create() {
+  const router = useRouter()
   const {
     register,
     handleSubmit,
@@ -16,6 +18,8 @@ export default function Create() {
       body: JSON.stringify(data),
       headers: { 'Content-Type': 'application/json' },
       method: 'POST',
+    }).finally(() => {
+      router.push('/list')
     })
   }
 
