@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "app"
+		},
+		{
+			"path": "api"
+		}
+	],
+	"settings": {
+		"i18n-ally.localesPaths": [
+			"src/i18n",
+			"src/i18n/locales"
+		],
+		"i18n-ally.keystyle": "nested",
+		"typescript.tsdk": "node_modules/typescript/lib"
+	}
+}

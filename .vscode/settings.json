@@ -1,0 +1,7 @@
+{
+  "npm.packageManager": "yarn",
+  "eslint.packageManager": "yarn",
+  "stylelint.packageManager": "yarn",
+  "i18n-ally.localesPaths": ["client/src/i18n", "client/src/i18n/locales"],
+  "i18n-ally.keystyle": "nested"
+}
